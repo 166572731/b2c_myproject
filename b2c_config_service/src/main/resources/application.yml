@@ -1,0 +1,26 @@
+server:
+  port: 8889
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      label: master
+      server:
+        git:
+          uri: https://gitee.com/chenlei888/B2c_Config.git
+          search-paths: /**
+          username: chenlei888
+          password: pg121381
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
