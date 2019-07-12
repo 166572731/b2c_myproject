@@ -1,6 +1,6 @@
 spring:
   application:
-    name: zuul_service
+    name: zuul-service
   cloud:
     bus:
       enabled: true
