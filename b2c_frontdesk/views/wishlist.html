@@ -1287,7 +1287,7 @@
         <div class="col-main col-sm-9 col-xs-12">
           <div class="my-account">
             <div class="page-title">
-              <h2>My Wishlist</h2>
+              <h2>我的收藏</h2>
             </div>
             <div class="wishlist-item table-responsive">
               <table class="col-md-12">
@@ -1337,25 +1337,108 @@
         <aside class="right sidebar col-sm-3 col-xs-12">
           <div class="sidebar-account block">
             <div class="sidebar-bar-title">
-              <h3>My Account</h3>
+              <h3>我的商城</h3>
             </div>
             <div class="block-content">
-              <ul>
-                <li><a>Account Dashboard</a></li>
-                <li><a href="#">Account Information</a></li>
-                <li><a href="#">Address Book</a></li>
-                <li><a href="#">My Orders</a></li>
-                <li><a href="#">Billing Agreements</a></li>
-                <li><a href="#">Recurring Profiles</a></li>
-                <li><a href="#">My Product Reviews</a></li>
-                <li><a href="#">My Tags</a></li>
-                <li class="current"><a href="#">My Wishlist</a></li>
-                <li><a href="#">My Downloadable</a></li>
-                <li class="last"><a href="#">Newsletter Subscriptions</a></li>
-              </ul>
+                <div class="panel-group accordion-faq" id="myzhang-accordion">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#myzhang-accordion" href="#myorder">
+                                <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+                                <span class="arrow-up"><i class="fa fa-angle-up"></i></span>
+                                <span>交易中心</span>
+                            </a>
+                        </div>
+                        <div id="myorder" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">实物交易订单</a></li>
+                                    <li><a href="#">虚拟兑码订单</a></li>
+                                    <li><a href="#">交易评价/晒单</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#myzhang-accordion" href="#mywish">
+                                <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+                                <span class="arrow-up"><i class="fa fa-angle-up"></i></span>
+                                <span>我的收藏</span>
+                            </a>
+                        </div>
+                        <div id="mywish" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li class="current"><a href="#">商品收藏</a></li>
+                                    <li><a href="#">店铺收藏</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#myzhang-accordion" href="#myinfo">
+                                <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+                                <span class="arrow-up"><i class="fa fa-angle-up"></i></span>
+                                <span>会员资料</span>
+                            </a>
+                        </div>
+                        <div id="myinfo" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">账户信息</a></li>
+                                    <li><a href="#">收货地址</a></li>
+                                    <li><a href="#">账户安全</a></li>
+                                    <li><a href="#">我的消息</a></li>
+                                    <li><a href="#">第三方账号登录</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#myzhang-accordion" href="#mycaichan">
+                                <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+                                <span class="arrow-up"><i class="fa fa-angle-up"></i></span>
+                                <span>财产中心</span>
+                            </a>
+                        </div>
+                        <div id="mycaichan" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">账户余额</a></li>
+                                    <li><a href="#">我的代金券</a></li>
+                                    <li><a href="#">我的红包</a></li>
+                                    <li><a href="#">我的积分</a></li>
+                                    <li><a href="#">消费记录</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#myzhang-accordion" href="#myshouhou">
+                                <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+                                <span class="arrow-up"><i class="fa fa-angle-up"></i></span>
+                                <span>客户服务</span>
+                            </a>
+                        </div>
+                        <div id="myshouhou" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">退款及退货</a></li>
+                                    <li><a href="#">交易投诉</a></li>
+                                    <li><a href="#">违规举报</a></li>
+                                    <li><a href="#">平台客服</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
-          <div class="compare block">
+          <!--<div class="compare block">
             <div class="sidebar-bar-title">
               <h3>Compare Products (2)</h3>
             </div>
@@ -1369,7 +1452,7 @@
                 <button type="submit" title="Submit" class="button button-clear"> <span><i class="fa fa-eraser"></i> Clear All</span></button>
               </div>
             </div>
-          </div>
+          </div>-->
         </aside>
       </div>
     </div>
