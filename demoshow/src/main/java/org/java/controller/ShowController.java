@@ -16,8 +16,10 @@ public class ShowController {
     private DemodeteService demodeteService;
     @RequestMapping("/show/{name}")
     public Map show(@PathVariable("name") String name){
+        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         Map map=new HashMap();
         System.out.println(demodeteService.show(name));
+        System.out.println("ccccccccccccccccccccccccccc");
         map.put("url", name);
         map.put("prodouct", demodeteService.show(name));
         return map;

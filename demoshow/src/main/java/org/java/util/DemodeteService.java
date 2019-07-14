@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Map;
 
 @Component
-@FeignClient(value = "demodate-service",fallbackFactory = HostServiceFallbackFactory.class)
+@FeignClient(value = "demodate-service",url = "http://ganzuul.free.idcfengye.com/demodate",fallbackFactory = HostServiceFallbackFactory.class)
 public interface DemodeteService {
     @RequestMapping("/show/{name}")
     String show(@RequestParam("name") String name);

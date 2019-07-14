@@ -32,7 +32,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
-
         <!--配置消息队列 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

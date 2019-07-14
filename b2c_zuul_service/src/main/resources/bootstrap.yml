@@ -10,9 +10,9 @@ spring:
       discovery:
         enabled: true
         service-id: config-server      #注册中心的服务名
-      profile: dev  #指定配置文件的环境
+      profile: chendev  #指定配置文件的环境
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://b2ceu.free.idcfengye.com/eureka/
