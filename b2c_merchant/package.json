@@ -1,15 +1,17 @@
 {
-  "name": "b2c_merchant",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "http-proxy-middleware": "^0.19.1"
-  },
-  "devDependencies": {},
+  "name": "b2c-merchant",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "CHENLEI",
-  "license": "ISC"
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "http-proxy-middleware": "^0.19.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
 }
