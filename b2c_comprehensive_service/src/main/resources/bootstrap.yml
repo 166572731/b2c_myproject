@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: comprehensive-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server      #注册中心的服务名
+      profile: chendev  #指定配置文件的环境
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://b2ceu.free.idcfengye.com/eureka/
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: org.java.entity,java.util
